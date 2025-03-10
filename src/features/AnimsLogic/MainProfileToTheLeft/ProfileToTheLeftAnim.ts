@@ -49,8 +49,14 @@ const setHeight = ({
     scrollTop >= containerScrollThreshold &&
     scrollTop <= containerHeight
   ) {
-    const newHeight = 100 * (scrollTop / containerHeight);
-    ProfileElem.style.height = newHeight < 60 ? "60vh" : `${newHeight}vh`;
+    const newHeight = 120 * (scrollTop / containerHeight);
+    if (newHeight < 60) {
+      ProfileElem.style.height = "60vh";
+    } else if (newHeight > 100) {
+      ProfileElem.style.height = "100vh";
+    } else {
+      ProfileElem.style.height = `${newHeight}vh`;
+    }
   } else {
     ProfileElem.style.height = "100vh";
   }
@@ -66,7 +72,7 @@ const setWidth = ({
   // Если прокрутка меньше 25% высоты контейнера, устанавливаем width на стандартное значение
   if (scrollTop < containerScrollThreshold) {
     ProfileElem.style.width =
-      elemStandartWidth > 320 ? `${elemStandartWidth}px` : "320px";
+      elemStandartWidth> 320 ? `${elemStandartWidth}px` : "320px";
   }
   // Если прокрутка находится между 25% и полной высотой контейнера
   else if (
@@ -78,7 +84,7 @@ const setWidth = ({
       elemStandartWidth -
       ((scrollTop - containerScrollThreshold) /
         (containerHeight - containerScrollThreshold)) *
-        400;
+        400 * 0.8 ;
     ProfileElem.style.width = newWidth > 320 ? `${newWidth}px` : "320px";
   }
   // Если прокрутка превышает высоту контейнера, устанавливаем left на 0%
