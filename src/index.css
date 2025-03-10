@@ -7,7 +7,15 @@
   font: 900 1.2rem sans-serif;
 }
 
-body{
+body {
   background-color: #0f1a22;
   color: white;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
