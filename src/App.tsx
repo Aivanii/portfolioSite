@@ -1,7 +1,8 @@
+import { MainProfile } from "./index";
 function App() {
   return (
     <>
-      myApp
+      <MainProfile />
     </>
   )
 }
