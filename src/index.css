@@ -14,6 +14,6 @@ html {
 }
 
 body {
-  background-color: #030712;
   color: #c5d0dc;
+  background: linear-gradient(to right bottom, #030712, #071f05)
 }

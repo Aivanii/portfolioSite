@@ -8,33 +8,42 @@
   justify-content: center;
   align-items: center;
   .wrap {
+    z-index: 0;
     border: 1px solid #1d202a;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.45em;
     padding: 1em;
+    position: relative;
     border-radius: 0.45em;
-    background: #10141e;
-    backdrop-filter: blur(12px);
+    background: #10141e41;
+    backdrop-filter: blur(8px);
     .profile-picture {
       aspect-ratio: 1;
       width: 210px;
       border-radius: 100%;
+      z-index: 2;
     }
 
     h1 {
       font-size: 3em;
-      font-weight: 900;
+      font-weight: 700;
+      z-index: 2;
+      color: white;
     }
     h2 {
       font-size: 1.5em;
-      font-weight: 700;
+      font-weight: 600;
+      z-index: 2;
+      color: white;
     }
     p {
       font-size: 0.7em;
       font-weight: 500;
+      z-index: 2;
     }
   }
 }

@@ -1,3 +1,4 @@
+import { BluredBgCircle } from "../../index";
 const MainProfile = () => {
   return (
     <div className="profile-container">
@@ -25,6 +26,14 @@ const MainProfile = () => {
           not only functional but also aesthetically pleasing, and I am always
           ready for new challenges and projects!
         </p>
+        <BluredBgCircle
+          width={300}
+          height={300}
+          top={-150}
+          left={-100}
+          opacity={1}
+          backgroundColor={"#071f05"}
+        />
       </div>
     </div>
   );

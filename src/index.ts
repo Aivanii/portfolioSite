@@ -7,3 +7,8 @@ import MySkills from "./entities/MySkills/MySkillsComponent";
 export { MySkills };
 
 import "./entities/MySkills/MySkillsStyles.scss";
+
+import BluredBgCircle from "./entities/BluredBgCircle/BluredBgCircleComponent";
+export { BluredBgCircle };
+
+import "./entities/BluredBgCircle/BluredBgCircleStyles.scss";
