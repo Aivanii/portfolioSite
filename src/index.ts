@@ -12,3 +12,8 @@ import BluredBgCircle from "./entities/BluredBgCircle/BluredBgCircleComponent";
 export { BluredBgCircle };
 
 import "./entities/BluredBgCircle/BluredBgCircleStyles.scss";
+
+//anims
+
+import ProfileToTheLeftAnim from "./features/AnimsLogic/MainProfileToTheLeft/ProfileToTheLeftAnim";
+export { ProfileToTheLeftAnim };

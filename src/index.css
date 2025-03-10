@@ -15,5 +15,6 @@ html {
 
 body {
   color: #c5d0dc;
-  background: linear-gradient(to right bottom, #030712, #071f05)
+  background: #030712;
+  height: 1000vh;
 }

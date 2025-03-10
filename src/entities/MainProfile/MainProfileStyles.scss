@@ -1,23 +1,26 @@
 .profile-container {
-  width: clamp(320px, 50vw, 768px);
   position: relative;
   margin: auto;
-  height: 100vh;
+  height: 400vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(to right bottom, #030712, #071f05);
   .wrap {
+    width: clamp(320px, 50vw, 768px);
+    transition: all 0.15s linear;
+    height: 60vh;
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
     z-index: 0;
     border: 1px solid #1d202a;
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 0.45em;
     padding: 1em;
-    position: relative;
     border-radius: 0.45em;
     background: #10141e41;
     backdrop-filter: blur(8px);
