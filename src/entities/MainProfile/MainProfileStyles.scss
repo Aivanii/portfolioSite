@@ -1,0 +1,32 @@
+.profile-container {
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+  width: clamp(320px, 30vw, 640px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  .profile-picture {
+    aspect-ratio: 1;
+    width: 120px;
+    border-radius: 100%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 768px) {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
