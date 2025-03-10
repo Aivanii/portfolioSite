@@ -7,6 +7,10 @@
   font: 900 1.2rem sans-serif;
 }
 
+html {
+  scrollbar-color: #ff9f3a #121212;
+}
+
 body {
   background-color: #0f1a22;
   color: white;
