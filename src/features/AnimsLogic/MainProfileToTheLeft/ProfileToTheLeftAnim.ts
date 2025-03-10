@@ -1,33 +1,48 @@
+interface InterfaceProperties {
+  scrollTop: number;
+  containerScrollThreshold: number;
+  ProfileElem: HTMLElement;
+  containerHeight: number;
+}
 const ProfileToTheLeftAnim = () => {
-  // Получаем высоту видимой части окна
-  const windowHeight = window.innerHeight;
-
-  const profileContainer = document.querySelector(".profile-container");
-  const ProfileElem = document.querySelector(".wrap");
+  const profileContainer = document.querySelector(
+    ".profile-container"
+  ) as HTMLElement;
+  const ProfileElem = document.querySelector(".wrap") as HTMLElement;
   if (!profileContainer || !ProfileElem) return;
 
-  // Получаем высоту элемента profile-container
   const containerHeight = profileContainer.offsetHeight;
-  // Получаем текущую позицию прокрутки
+  if (!containerHeight) return;
   const scrollTop = window.scrollY;
 
-  // Вычисляем, когда прокрутка достигает 50% высоты profile-container
   const containerScrollThreshold = containerHeight * 0.5;
 
-  //LEFT
-  setLeft(scrollTop, containerScrollThreshold, ProfileElem, containerHeight);
-  //WIDTH
-  setWidth(scrollTop, containerScrollThreshold, ProfileElem, containerHeight);
-  //HEIGHT
-  setHeight(scrollTop, containerScrollThreshold, ProfileElem, containerHeight);
+  setLeft({
+    scrollTop: scrollTop,
+    containerScrollThreshold: containerScrollThreshold,
+    ProfileElem: ProfileElem,
+    containerHeight: containerHeight,
+  });
+  setWidth({
+    scrollTop: scrollTop,
+    containerScrollThreshold: containerScrollThreshold,
+    ProfileElem: ProfileElem,
+    containerHeight: containerHeight,
+  });
+  setHeight({
+    scrollTop: scrollTop,
+    containerScrollThreshold: containerScrollThreshold,
+    ProfileElem: ProfileElem,
+    containerHeight: containerHeight,
+  });
 };
 
-const setHeight = (
+const setHeight = ({
   scrollTop,
   containerScrollThreshold,
   ProfileElem,
-  containerHeight
-) => {
+  containerHeight,
+}: InterfaceProperties): void => {
   if (scrollTop < containerScrollThreshold) {
     ProfileElem.style.height = "60vh";
   } else if (
@@ -35,25 +50,18 @@ const setHeight = (
     scrollTop <= containerHeight
   ) {
     const newHeight = 100 * (scrollTop / containerHeight);
-    console.log(`
-  scrollTop: ${scrollTop},
-  containerScrollThreshold: ${containerScrollThreshold},
-  ProfileElem: ${ProfileElem},
-  containerHeight: ${containerHeight}
-        `);
     ProfileElem.style.height = newHeight < 60 ? "60vh" : `${newHeight}vh`;
-    console.log("newHeight:", newHeight, "%");
   } else {
     ProfileElem.style.height = "100vh";
   }
 };
 
-const setWidth = (
+const setWidth = ({
   scrollTop,
   containerScrollThreshold,
   ProfileElem,
-  containerHeight
-) => {
+  containerHeight,
+}: InterfaceProperties): void => {
   const elemStandartWidth = window.innerWidth * 0.5;
   // Если прокрутка меньше 25% высоты контейнера, устанавливаем width на стандартное значение
   if (scrollTop < containerScrollThreshold) {
@@ -79,12 +87,12 @@ const setWidth = (
   }
 };
 
-const setLeft = (
+const setLeft = ({
   scrollTop,
   containerScrollThreshold,
   ProfileElem,
-  containerHeight
-) => {
+  containerHeight,
+}: InterfaceProperties): void => {
   // Если прокрутка меньше 25% высоты контейнера, устанавливаем left на 25%
   if (scrollTop < containerScrollThreshold) {
     ProfileElem.style.left = "25%";
