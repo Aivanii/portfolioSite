@@ -5,23 +5,23 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 0.25em;
+  gap: 0.45em;
   .profile-picture {
     aspect-ratio: 1;
-    width: 120px;
+    width: 90px;
     border-radius: 100%;
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 900;
   }
   h2 {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 700;
   }
   p {
-    font-size: 1rem;
+    font-size: 0.7em;
     font-weight: 500;
   }
   @media screen and (max-width: 768px) {
