@@ -17,3 +17,6 @@ import "./entities/BluredBgCircle/BluredBgCircleStyles.scss";
 
 import ProfileToTheLeftAnim from "./features/AnimsLogic/MainProfileToTheLeft/ProfileToTheLeftAnim";
 export { ProfileToTheLeftAnim };
+
+import FadeInAndOutSkillCard from "./features/AnimsLogic/SkillCards/FadeInAndOutSkillCard";
+export { FadeInAndOutSkillCard };
