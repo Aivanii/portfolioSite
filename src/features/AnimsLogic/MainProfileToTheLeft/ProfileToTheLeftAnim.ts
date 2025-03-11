@@ -11,7 +11,7 @@ const ProfileToTheLeftAnim = () => {
   const ProfileElem = document.querySelector(".wrap") as HTMLElement;
   if (!profileContainer || !ProfileElem) return;
 
-  const containerHeight = profileContainer.offsetHeight;
+  const containerHeight = profileContainer.offsetHeight - window.innerWidth;
   if (!containerHeight) return;
   const scrollTop = window.scrollY;
 
@@ -84,7 +84,7 @@ const setWidth = ({
       elemStandartWidth -
       ((scrollTop - containerScrollThreshold) /
         (containerHeight - containerScrollThreshold)) *
-        400 * 0.8 ;
+        400;
     ProfileElem.style.width = newWidth > 320 ? `${newWidth}px` : "320px";
   }
   // Если прокрутка превышает высоту контейнера, устанавливаем left на 0%
