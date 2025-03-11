@@ -1,6 +1,6 @@
 .mySkills-container {
   margin-top: 100vh;
-  height: 1000vh;
+  height: 2000vh;
   .wrap {
     display: grid;
     position: sticky;
@@ -12,7 +12,7 @@
     width: fit-content;
     margin: auto;
     padding-left: 320px;
-    .card {
+    div.card {
       width: 15em;
       aspect-ratio: 2;
       border-radius: 1em;

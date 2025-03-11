@@ -2,7 +2,9 @@ const MySkills = () => {
   return (
     <div className="mySkills-container">
       <div className="wrap">
-        <h2>My skills</h2>
+        <h2 className="card" style={{ opacity: 0 }}>
+          My skills
+        </h2>
         <div />
         <div />
         <div className="card">

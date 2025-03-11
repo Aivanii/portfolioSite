@@ -24,11 +24,12 @@ const FadeInAndOutSkillCard = () => {
         100
     ).toFixed(2)
   );
-  const intervalBetweenCards = 70 / cardsElems.length;
+
+  const intervalBetweenCards = 60 / cardsElems.length;
   cardsElems.forEach((card, index) => {
     card.style.opacity =
       (percentageOfScrolledOfSkillCardsContainer -
-        intervalBetweenCards * index) /
+        intervalBetweenCards * index ) /
       intervalBetweenCards;
   });
   console.log(percentageOfScrolledOfSkillCardsContainer);
