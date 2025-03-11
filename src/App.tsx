@@ -6,11 +6,22 @@ import { MySkills } from "./index";
 import { ProfileToTheLeftAnim } from "./index";
 import { FadeInAndOutSkillCard } from "./index";
 function App() {
-  ProfileToTheLeftAnim();
-  FadeInAndOutSkillCard();
   useEffect(() => {
-    window.addEventListener("scroll", ProfileToTheLeftAnim);
-    window.addEventListener("scroll", FadeInAndOutSkillCard);
+    const handleScrollProfile = () => {
+      ProfileToTheLeftAnim();
+    };
+
+    const handleScrollFade = () => {
+      FadeInAndOutSkillCard();
+    };
+
+    window.addEventListener("scroll", handleScrollProfile);
+    window.addEventListener("scroll", handleScrollFade);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollProfile);
+      window.removeEventListener("scroll", handleScrollFade);
+    };
   }, []);
   return (
     <>
