@@ -57,9 +57,17 @@ const MySkills = () => {
           <h3>Bootstrap</h3>
         </div>
         <div className="card">
+          <img
+            src="https://img.icons8.com/?size=100&id=102729&format=png&color=000000"
+            alt="still learning"
+          />
           <h3>Learning..</h3>
         </div>
         <div className="card">
+          <img
+            src="https://img.icons8.com/?size=100&id=102729&format=png&color=000000"
+            alt="still learning"
+          />
           <h3>Learning</h3>
         </div>
       </div>
