@@ -13,17 +13,27 @@
     margin: auto;
     padding-left: 320px;
     div.card {
+      img {
+        width: 4em;
+        aspect-ratio: 1;
+        border-radius: 1em;
+        margin-left: auto;
+      }
+      h3{
+        margin-right: auto;
+      }
       width: 15em;
       aspect-ratio: 2;
       border-radius: 1em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: grid;
       border: 1px solid #1d202a;
       background: linear-gradient(to left top, #030712, #0e3d0a);
       box-shadow: 0 0 2em #0e3d0a;
       transition: all 1s linear;
       opacity: 0;
+      gap: 1em;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
     }
   }
 }
