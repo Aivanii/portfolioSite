@@ -1,0 +1,29 @@
+.mySkills-container {
+  margin-top: 100vh;
+  height: 1000vh;
+  .wrap {
+    display: grid;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    place-items: center;
+    width: fit-content;
+    margin: auto;
+    padding-left: 320px;
+    .card {
+      width: 15em;
+      aspect-ratio: 2;
+      border-radius: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #1d202a;
+      background: linear-gradient(to left top, #030712, #0e3d0a);
+      box-shadow: 0 0 2em #0e3d0a;
+      transition: all 1s linear;
+      opacity: 0;
+    }
+  }
+}

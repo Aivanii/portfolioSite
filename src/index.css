@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   padding: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font: 900 1.2rem sans-serif;
 
-  font: 'inter', 'inter Fallback';
+  font: "inter", "inter Fallback";
 }
 
 html {
@@ -15,6 +15,29 @@ html {
 
 body {
   color: #c5d0dc;
-  background: #030712;
-  height: 1000vh;
+  background: linear-gradient(to right bottom, #030712, #031206);
+}
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  z-index: 2;
+  color: white;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  z-index: 2;
+  color: white;
+}
+h3 {
+  font-size: 1.25em;
+  font-weight: 500;
+  z-index: 2;
+  color: white;
+}
+p,
+span {
+  font-size: 0.7em;
+  font-weight: 500;
+  z-index: 2;
 }

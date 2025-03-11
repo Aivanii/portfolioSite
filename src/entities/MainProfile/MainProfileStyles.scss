@@ -4,7 +4,6 @@
   height: 400vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right bottom, #030712, #071f05);
   .wrap {
     width: clamp(320px, 50vw, 768px);
     transition: all 0.25s linear;
@@ -31,22 +30,5 @@
       z-index: 2;
     }
 
-    h1 {
-      font-size: 3em;
-      font-weight: 700;
-      z-index: 2;
-      color: white;
-    }
-    h2 {
-      font-size: 1.5em;
-      font-weight: 600;
-      z-index: 2;
-      color: white;
-    }
-    p {
-      font-size: 0.7em;
-      font-weight: 500;
-      z-index: 2;
-    }
   }
 }
