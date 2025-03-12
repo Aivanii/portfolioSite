@@ -25,3 +25,6 @@ export { ProfileToTheLeftAnim };
 
 import FadeInAndOutSkillCard from "./features/AnimsLogic/SkillCards/FadeInAndOutSkillCard";
 export { FadeInAndOutSkillCard };
+
+import ProfileToTheRight from "./features/AnimsLogic/MainProfileToTheRight/ProfileToTheRightAnim";
+export {ProfileToTheRight}; 

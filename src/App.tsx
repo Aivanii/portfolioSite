@@ -6,10 +6,12 @@ import { SpaceForFadeMainProfileToTheRight } from "./index";
 //anims
 import { ProfileToTheLeftAnim } from "./index";
 import { FadeInAndOutSkillCard } from "./index";
+import {ProfileToTheRight} from "./index";
 function App() {
   useEffect(() => {
     const handleScrollProfile = () => {
       ProfileToTheLeftAnim();
+      ProfileToTheRight();
     };
 
     const handleScrollFade = () => {
