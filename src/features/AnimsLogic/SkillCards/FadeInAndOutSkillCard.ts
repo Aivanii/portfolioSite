@@ -39,7 +39,6 @@ const FadeInAndOutSkillCard = () => {
       card.style.opacity = 1 - (percentageOfScrolledOfSkillCardsContainer  / 80);
     });
   }
-  console.log(percentageOfScrolledOfSkillCardsContainer);
 };
 
 export default FadeInAndOutSkillCard;
