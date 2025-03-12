@@ -26,12 +26,19 @@ const FadeInAndOutSkillCard = () => {
   );
 
   const intervalBetweenCards = 45 / cardsElems.length;
-  cardsElems.forEach((card, index) => {
-    card.style.opacity =
-      (percentageOfScrolledOfSkillCardsContainer -
-        intervalBetweenCards * index ) /
-      intervalBetweenCards;
-  });
+
+  if (percentageOfScrolledOfSkillCardsContainer < 70) {
+    cardsElems.forEach((card, index) => {
+      card.style.opacity =
+        (percentageOfScrolledOfSkillCardsContainer -
+          intervalBetweenCards * index) /
+        intervalBetweenCards;
+    });
+  } else {
+    cardsElems.forEach((card) => {
+      card.style.opacity = 1 - (percentageOfScrolledOfSkillCardsContainer  / 80);
+    });
+  }
   console.log(percentageOfScrolledOfSkillCardsContainer);
 };
 
