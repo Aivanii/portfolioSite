@@ -18,6 +18,11 @@ export { SpaceForFadeMainProfileToTheRight };
 
 import "./entities/SpaceForFadeMainProfileToTheRight/SpaceForFadeMainProfileToTheRightStyles.scss";
 
+import MyProjects from "./entities/MyProjects/MyProjectsComponent";
+export { MyProjects };
+
+import "./entities/MyProjects/MyProjectsStyles.scss";
+
 //anims
 
 import ProfileToTheLeftAnim from "./features/AnimsLogic/MainProfileToTheLeft/ProfileToTheLeftAnim";
@@ -27,4 +32,4 @@ import FadeInAndOutSkillCard from "./features/AnimsLogic/SkillCards/FadeInAndOut
 export { FadeInAndOutSkillCard };
 
 import ProfileToTheRight from "./features/AnimsLogic/MainProfileToTheRight/ProfileToTheRightAnim";
-export {ProfileToTheRight}; 
+export { ProfileToTheRight };
