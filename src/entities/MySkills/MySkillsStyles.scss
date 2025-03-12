@@ -1,6 +1,9 @@
 .mySkills-container {
   margin-top: 100vh;
   height: 1500vh;
+  h2 {
+    transition: all 1s linear;
+  }
   .wrap {
     display: grid;
     position: sticky;
@@ -19,7 +22,7 @@
         border-radius: 1em;
         margin-left: auto;
       }
-      h3{
+      h3 {
         margin-right: auto;
       }
       width: 15em;
