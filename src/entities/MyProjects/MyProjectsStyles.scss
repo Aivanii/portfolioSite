@@ -6,31 +6,13 @@
     position: sticky;
   }
 }
-
+.lineOfProjects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .rotate {
   transition: transform 1s linear;
   display: inline-block;
-}
-.rotate[data-rotate="60"] {
-  transform: rotate(60deg);
-}
-
-.rotate[data-rotate="120"] {
-  transform: rotate(120deg);
-}
-
-.rotate[data-rotate="180"] {
-  transform: rotate(180deg);
-}
-
-.rotate[data-rotate="240"] {
-  transform: rotate(240deg);
-}
-
-.rotate[data-rotate="300"] {
-  transform: rotate(300deg);
-}
-
-.rotate[data-rotate="360"] {
-  transform: rotate(360deg);
 }
