@@ -1,5 +1,36 @@
-.myProjects-container{
-    .wrap{
-        
-    }
+.myProjects-container {
+  .wrap {
+    padding-right: 320px;
+    height: 100vh;
+    aspect-ratio: 1;
+    position: sticky;
+  }
+}
+
+.rotate {
+  transition: transform 1s linear;
+  display: inline-block;
+}
+.rotate[data-rotate="60"] {
+  transform: rotate(60deg);
+}
+
+.rotate[data-rotate="120"] {
+  transform: rotate(120deg);
+}
+
+.rotate[data-rotate="180"] {
+  transform: rotate(180deg);
+}
+
+.rotate[data-rotate="240"] {
+  transform: rotate(240deg);
+}
+
+.rotate[data-rotate="300"] {
+  transform: rotate(300deg);
+}
+
+.rotate[data-rotate="360"] {
+  transform: rotate(360deg);
 }
