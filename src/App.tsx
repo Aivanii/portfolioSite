@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { MainProfile } from "./index";
 import { MySkills } from "./index";
+import { SpaceForFadeMainProfileToTheRight } from "./index";
 
 //anims
 import { ProfileToTheLeftAnim } from "./index";
@@ -27,6 +28,7 @@ function App() {
     <>
       <MainProfile />
       <MySkills />
+      <SpaceForFadeMainProfileToTheRight />
     </>
   );
 }

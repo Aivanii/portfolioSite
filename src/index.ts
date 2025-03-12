@@ -13,6 +13,11 @@ export { BluredBgCircle };
 
 import "./entities/BluredBgCircle/BluredBgCircleStyles.scss";
 
+import SpaceForFadeMainProfileToTheRight from "./entities/SpaceForFadeMainProfileToTheRight/SpaceForFadeMainProfileToTheRightComponent";
+export { SpaceForFadeMainProfileToTheRight };
+
+import "./entities/SpaceForFadeMainProfileToTheRight/SpaceForFadeMainProfileToTheRightStyles.scss";
+
 //anims
 
 import ProfileToTheLeftAnim from "./features/AnimsLogic/MainProfileToTheLeft/ProfileToTheLeftAnim";
