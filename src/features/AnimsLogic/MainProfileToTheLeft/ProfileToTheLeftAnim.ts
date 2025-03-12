@@ -17,6 +17,8 @@ const ProfileToTheLeftAnim = () => {
 
   const containerScrollThreshold = containerHeight * 0.5;
 
+  if (scrollTop > profileContainer.clientHeight) return;
+
   setLeft({
     scrollTop: scrollTop,
     containerScrollThreshold: containerScrollThreshold,
@@ -72,7 +74,7 @@ const setWidth = ({
   // Если прокрутка меньше 25% высоты контейнера, устанавливаем width на стандартное значение
   if (scrollTop < containerScrollThreshold) {
     ProfileElem.style.width =
-      elemStandartWidth> 320 ? `${elemStandartWidth}px` : "320px";
+      elemStandartWidth > 320 ? `${elemStandartWidth}px` : "320px";
   }
   // Если прокрутка находится между 25% и полной высотой контейнера
   else if (
