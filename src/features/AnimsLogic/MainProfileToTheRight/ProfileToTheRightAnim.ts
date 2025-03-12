@@ -23,13 +23,13 @@ const ProfileToTheRight = () => {
 
   const percentageOfScrolledOfSkillCardsContainer = Number(
     100 *
-      ((window.scrollY -
-        heightOfParentContainers +
-        SpaceElem.clientHeight) /
-        SpaceElem.clientHeight)
+      ((window.scrollY - heightOfParentContainers + SpaceElem.clientHeight) /
+        SpaceElem.clientHeight) + 66
   );
+  ProfileElem.style.left = `${
+    (window.innerWidth / 100) * percentageOfScrolledOfSkillCardsContainer - 320
+  }px`;
 
-  console.log(`${percentageOfScrolledOfSkillCardsContainer}%`);
 };
 
 export default ProfileToTheRight;
